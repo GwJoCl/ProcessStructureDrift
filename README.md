@@ -1,5 +1,5 @@
 # Explainable Concept Drift based on Multivariate Process Abstraction
-This directory contains the analysis material for the BPM paper entitled "Explainable Concept Drift Detection based on Multivariate Process Abstraction".
+This directory contains the analysis material for the submitted BPM paper entitled "Explainable Concept Drift Detection based on Multivariate Process Abstraction".
 
 ## Data
 The [Data](https://github.com/GwJoCl/ProcessStructureDrift/tree/main/Data) file contains the user behavior data used for evaluation.
