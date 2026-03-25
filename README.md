@@ -1,4 +1,5 @@
 # Repository Structure
+This directory contains the analysis material for the BPM paper entitled "Explainable Concept Drift Detection based on Multivariate Process Abstraction".
 
 ## Data
 The [Data](https://github.com/GwJoCl/ProcessStructureDrift/tree/main/Data) file contains the user behavior data used for evaluation.
@@ -31,15 +32,30 @@ The [Notebooks](https://github.com/GwJoCl/ProcessStructureDrift/tree/main/Notebo
 
 ### Simulated data (lags = 5)
 
-
-| Algorithm      | Parameters                                           |
-|----------------|------------------------------------------------------|
-| ProcessGraphs  | Window size: 300, max. window size: 400, p-value:0.1 |
-
+| Algorithm      | Parameters                                                    |
+|----------------|---------------------------------------------------------------|
+| ProcessGraphs  | Window size: 300, max. window size: 400, p-value: 0.1         |
+| EMD            | Window size: 150, step size: 1                                |
+| Adwin/J        | Min/max adaptive window: 200/700, p-value: 0.4, step size: 20 |
+| Rinv           | Minimum relation invariance distance: 600, epsilon: 180       |
+| Lcdd           | Window size complete/detection: 400/400, stable period: 5     |
+| Bose/J         | Window size: 150, step size: 2                                |
+| ProDrift       | Window size: 400, step size: 2                                |
+| MVPA           | Window size: 200, penalty = (number of traces)^0.5            |
 
 
 ### User Behavior Data – high complexity (lags = 10)
-(Tables preserved as text.)
+
+| Algorithm      | Parameters                                                    |
+|----------------|---------------------------------------------------------------|
+| ProcessGraphs  | Window size: 15, max. window size: 40, p-value: 1.0           |
+| EMD            | Window size: 6, step size: 1                                  |
+| Adwin/J        | Min/max adaptive window: 4/16, p-value: 0.6, step size: 2     |
+| Rinv           | Minimum relation invariance distance: 10, epsilon: 5          |
+| Lcdd           | Window size complete/detection: 15/15, stable period: 5       |
+| Bose/J         | Window size: 4, step size: 2                                  |
+| ProDrift       | Window size: 2, step size: 1                                  |
+| MVPA           | Window size: 14, change points = 1, change point adjustment: cp - (trace length / number of traces *0.2*14)          |
 
 ### User Behavior Data – low complexity (lags = 10)
 (Tables preserved as text.)
