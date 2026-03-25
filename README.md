@@ -1,4 +1,4 @@
-# Repository Structure
+# Explainable Concept Drift based on Multivariate Process Abstraction
 This directory contains the analysis material for the BPM paper entitled "Explainable Concept Drift Detection based on Multivariate Process Abstraction".
 
 ## Data
