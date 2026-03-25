@@ -43,6 +43,8 @@ The [Notebooks](https://github.com/GwJoCl/ProcessStructureDrift/tree/main/Notebo
 | ProDrift       | Window size: 400, step size: 2                                |
 | MVPA           | Window size: 200, penalty = (number of traces)^0.5            |
 
+The parameter settings and the results for ProcessGraphs, EMD, Adwin/J, Rinv, Lcdd, Bose/J, and ProDrift are adapted from:
+https://gitlab.uni-mannheim.de/processanalytics/concept-drift-characterization
 
 ### User Behavior Data – high complexity (lags = 10)
 
@@ -55,11 +57,20 @@ The [Notebooks](https://github.com/GwJoCl/ProcessStructureDrift/tree/main/Notebo
 | Lcdd           | Window size complete/detection: 15/15, stable period: 5       |
 | Bose/J         | Window size: 4, step size: 2                                  |
 | ProDrift       | Window size: 2, step size: 1                                  |
-| MVPA           | Window size: 14, change points = 1, change point adjustment: cp - (trace length / number of traces *0.2*14)          |
+| MVPA           | Window size: 14, change points = 1, change point adjustment: cp - (trace length / number of traces x 0.2 x 14)          |
 
 ### User Behavior Data – low complexity (lags = 10)
-(Tables preserved as text.)
 
-The parameter settings and the results for ProcessGraphs, EMD, Adwin/J, Rinv, Lcdd, Bose/J, and ProDrift are documented in the following repository:
-https://gitlab.uni-mannheim.de/processanalytics/concept-drift-characterization
+| Algorithm      | Parameters                                                    |
+|----------------|---------------------------------------------------------------|
+| ProcessGraphs  | Window size: 6, max. window size: 20, p-value: 1.0           |
+| EMD            | Window size: 4, step size: 1                                  |
+| Adwin/J        | Min/max adaptive window: 4/16, p-value: 0.5, step size: 2     |
+| Rinv           | Minimum relation invariance distance: 10, epsilon: 3          |
+| Lcdd           | Window size complete/detection: 10/10, stable period: 5       |
+| Bose/J         | Window size: 3, step size: 2                                  |
+| ProDrift       | Window size: 2, step size: 1                                  |
+| MVPA           | Window size: 9, change points = 1, change point adjustment: cp - (trace length / number of traces x 0.45 x 9)          |
+
+
 
