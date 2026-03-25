@@ -30,7 +30,13 @@ The [Notebooks](https://github.com/GwJoCl/ProcessStructureDrift/tree/main/Notebo
 ## Parameter Settings
 
 ### Simulated data (lags = 5)
-(Original tables preserved as text due to Markdown limitations.)
+
+
+| Algorithm      | Parameters                                           |
+|----------------|------------------------------------------------------|
+| ProcessGraphs  | Window size: 300, max. window size: 400, p-value:0.1 |
+
+
 
 ### User Behavior Data – high complexity (lags = 10)
 (Tables preserved as text.)
